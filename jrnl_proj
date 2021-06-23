@@ -1,0 +1,9 @@
+#!/bin/bash
+
+JOURNAL='./journal.txt'
+grep $1 $JOURNAL | awk '
+BEGIN {FS="[:|]"} 
+   {printf "%11s:\t%-70s\n", $1,substr($4,1,70)} 
+   {sum += $5} 
+END {print "Total hours:" sum}'
+

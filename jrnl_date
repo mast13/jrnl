@@ -1,0 +1,23 @@
+#!/bin/bash
+
+JOURNAL='./journal.txt'
+if [[ $# -ne 1 ]]; then
+    CURRENT_DATE=$(date +%Y-%m-%d)
+else
+    CURRENT_DATE=$1
+fi
+# Column 1: Date
+# Column 2: Project
+# Column 3: Work Item
+# Column 4: Description
+# Column 5: Hours
+echo "Entries for "$CURRENT_DATE
+grep $CURRENT_DATE $JOURNAL | awk '
+BEGIN {FS="[|]"} 
+  {printf "%-10s:%-15s%-60s: %s\n", $2, $3, substr($4,1,60), $5;
+   a[$2] += $5
+   sum += $5 
+  } 
+END {printf "-----\n";
+     for (i in a) printf "Total%10s hours:%10s\n",i, a[i];
+     printf "Total hours:%20s\n",sum}'

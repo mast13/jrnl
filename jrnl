@@ -1,0 +1,13 @@
+#!/bin/bash
+
+JOURNAL='./journal.txt'
+CURRENT_DATE=$(date +%Y-%m-%d)
+
+if [[ $# -ne 4 ]]; then
+    echo "Illegal number of parameters"
+    echo "Usage:"
+    echo "jrnl project work_item story \"notes\" hours"
+    exit 2
+fi
+echo "$CURRENT_DATE|$1 |$2 |$3 |$4" >> $JOURNAL
+
