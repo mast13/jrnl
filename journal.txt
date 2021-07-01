@@ -1,1 +1,6 @@
 DATE | Project Number(s) | Work Item(s) | Description | Hours 
+2021-06-27|1723 |opex |test note |0.5
+2021-06-28|8472/74656 |98763 |Investigated error in navigation algorithm |5.0
+2021-06-29|8472/74656 |98764 |Started work on correcting error in navigation algorithm | 8.0
+2021-06-30|8472/74656 |98764 |Completed correction to fix error in navigation algorithm | 2.0
+2021-07-01|8472/74656 |98765 |Added annotations to map |1.5
