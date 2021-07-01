@@ -33,7 +33,7 @@ The work item is OPEX, and the time spent is 0.5 hours.
 
 In this example, the work item 98765 belongs to two different project codes, 8472 and 74656.  The time spent on this activity was 1.5 hours.
 
-##jrnl_proj
+## jrnl_proj
 jrnl_proj queries the journal.txt file and returns the time spent on the specified activity or project.
 
 The query is not case sensitive.
