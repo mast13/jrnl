@@ -23,10 +23,10 @@ Project codes and activity numbers (work items) are alphanumeric and do not have
 `> ./jrnl project_code work_item "brief description" hours`
 
 #### Example:
-`> ./jrnl 1234 OPEX "Wrote README.md for jrnl utilities" 0.5`
+`> ./jrnl 001 jrnl_time_tracking "Wrote README.md for jrnl utilities" 0.5`
 
-In this example, a project code of 1234 is specified.
-The work item is OPEX, and the time spent is 0.5 hours.
+In this example, a project code of 001 is specified.
+The work item is jrnl_time_tracking, and the time spent is 0.5 hours.
 
 #### Example:
 `> ./jrnl 8472/74656 98765 "Added annotations to map" 1.5`
@@ -42,12 +42,12 @@ The query is not case sensitive.
 `> ./jrnl_proj number`
 
 #### Example:
-`> ./jrnl_proj opex`
+`> ./jrnl_proj jrnl_time_tracking`
  
 ` 2021-06-27:	test note`                                                             
 `Total hours:0.5`
 
-This query returns the date and total time spent on the OPEX activity.
+This query returns the date and total time spent on the jrnl_time_tracking activity.
 
 #### Example:
 `> ./jrnl_proj 8572`
